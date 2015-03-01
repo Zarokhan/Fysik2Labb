@@ -18,7 +18,7 @@ namespace WindowsGame1.Physics.Shapes
 
         private bool active;
         private Vector2 velocity = Vector2.Zero;
-        private float V0y, s;
+        private Vector2 startPos = Vector2.Zero;
         private float time;
 
         public Boll(ResourceManager res)
@@ -26,6 +26,7 @@ namespace WindowsGame1.Physics.Shapes
         {
             this.res = res;
             gravity = 9.8f;
+            SetRadius(50);
         }
 
         public void SetRadius(float radie)
@@ -47,8 +48,7 @@ namespace WindowsGame1.Physics.Shapes
             active = true;
             velocity.X = (float)(Math.Cos(MathHelper.ToRadians(angle)) * speed);
             velocity.Y = -(float)(Math.Sin(MathHelper.ToRadians(angle)) * speed);
-            V0y = velocity.Y;
-            s = pos.Y;
+            startPos = new Vector2(pos.X, pos.Y);
             time = 0;
         }
 
@@ -57,10 +57,9 @@ namespace WindowsGame1.Physics.Shapes
             if (active)
             {
                 time += delta;
-                velocity.Y = 0.5f * (gravity * delta * delta) / 2;
 
-                pos.Y += velocity.Y;
-                pos.X += velocity.X * delta;
+                pos.X = startPos.X + speed * time * (float)Math.Cos(angle);
+                pos.Y = startPos.Y - speed * time * (float)Math.Sin(angle) + (gravity * (time * time))/2;
             }
         }
 

@@ -11,7 +11,7 @@ namespace WindowsGame1.States.AllStates
 {
     class Astate : AbstractState
     {
-        public const int pixelPerMeter = 10;
+        public const int pixelPerMeter = 50;
 
         public Boll boll { get; set; }
 

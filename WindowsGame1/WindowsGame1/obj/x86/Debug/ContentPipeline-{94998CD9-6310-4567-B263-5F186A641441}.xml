@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\box.xnb</Output>
-      <Time>2015-03-01T16:22:05.0678096+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\box.xnb</Output>
+      <Time>2015-03-02T18:12:44.054335+01:00</Time>
     </Item>
     <Item>
       <Source>Images\boll.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\boll.xnb</Output>
-      <Time>2015-03-01T16:22:05.0668086+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\boll.xnb</Output>
+      <Time>2015-03-03T15:56:58.6281307+01:00</Time>
     </Item>
     <Item>
       <Source>Images\ramp.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ramp.xnb</Output>
-      <Time>2015-03-01T16:22:05.0698123+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ramp.xnb</Output>
+      <Time>2015-03-02T18:12:44.0583392+01:00</Time>
     </Item>
     <Item>
       <Source>Images\car.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\car.xnb</Output>
-      <Time>2015-03-01T16:22:05.0688103+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\car.xnb</Output>
+      <Time>2015-03-02T18:12:44.0563368+01:00</Time>
     </Item>
     <Item>
       <Source>Images\ohm.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ohm.xnb</Output>
-      <Time>2015-03-01T16:22:05.0688103+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ohm.xnb</Output>
+      <Time>2015-03-02T18:12:44.0573381+01:00</Time>
     </Item>
     <Item>
       <Source>font.spritefont</Source>
@@ -52,8 +52,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\font.xnb</Output>
-      <Time>2015-03-01T16:22:05.071814+01:00</Time>
+      <Output>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2015-03-02T18:12:44.0603406+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -62,10 +62,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

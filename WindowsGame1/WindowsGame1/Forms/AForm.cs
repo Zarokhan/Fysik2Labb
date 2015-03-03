@@ -58,8 +58,8 @@ namespace WindowsGame1.Forms
         {
             game.states.a.boll.pos.X = int.Parse(textBox1.Text);
             game.states.a.boll.pos.Y = (Game1.height/Astate.pixelPerMeter) - int.Parse(textBox2.Text);
-            game.states.a.boll.angle = int.Parse(textBox3.Text);
-            game.states.a.boll.Rotation = -MathHelper.ToRadians(int.Parse(textBox3.Text));
+            game.states.a.boll.angle = (float)MathHelper.ToRadians(int.Parse(textBox3.Text));
+            game.states.a.boll.rotation = game.states.a.boll.angle;
             game.states.a.boll.speed = int.Parse(textBox4.Text);
         }
 

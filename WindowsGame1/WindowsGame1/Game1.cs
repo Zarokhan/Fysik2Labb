@@ -58,7 +58,7 @@ namespace WindowsGame1
         protected override void LoadContent()
         {
             batch = new SpriteBatch(GraphicsDevice);
-            res = new ResourceManager();
+            res = new ResourceManager(this);
             res.LoadContent(Content);
             form = new SelectAssignment(this);
             form.Show();

@@ -49,3 +49,20 @@ C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\Wind
 C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csproj.GenerateResource.Cache
 C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Robin\Documents\Visual Studio 2013\Projects\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\box.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\boll.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ramp.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\car.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ohm.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\font.xnb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.Forms.AForm.resources
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.Forms.BForm.resources
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.Forms.CForm.resources
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.Fönster.SelectAssignment.resources
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csproj.GenerateResource.Cache
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Robin\Desktop\FysikLabb2\FysikLabb\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb

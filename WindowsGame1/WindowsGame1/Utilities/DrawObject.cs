@@ -29,6 +29,18 @@ namespace WindowsGame1.Utilities
             scale = 1f;
         }
 
+        public DrawObject(Texture2D dot, int width, int height, Color color)
+        {
+            this.texture = dot;
+            this.width = width;
+            this.height = height;
+            this.sourceRect = new Rectangle(0, 0, width, height);
+            this.origin = new Vector2(width / 2, height / 2);
+            this.pos = pos + origin;
+            this.color = color;
+            this.scale = 1f;
+        }
+
         public float Rotation
         {
             get { return rotation; }
@@ -38,6 +50,11 @@ namespace WindowsGame1.Utilities
         public virtual void Draw(SpriteBatch batch)
         {
             batch.Draw(texture, pos, sourceRect, color, rotation, origin, scale, fx, 0);
+        }
+
+        public virtual void Draw(SpriteBatch batch, int pixelspermeter)
+        {
+            batch.Draw(texture, pos * pixelspermeter, sourceRect, color, rotation, origin, scale, fx, 0);
         }
 
         public Rectangle Bounds

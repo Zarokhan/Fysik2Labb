@@ -17,9 +17,10 @@ namespace WindowsGame1.States.AllStates
 
         public Astate(Game1 game) : base(game)
         {
-            boll = new Boll(game.res);
-            boll.pos.X = 5;
-            boll.pos.Y = 5;
+            boll = new Boll(game);
+
+            boll.pos.X = 10;
+            boll.pos.Y = 7;
         }
 
         public override void Update(float delta)

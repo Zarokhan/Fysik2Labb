@@ -56,11 +56,11 @@ namespace WindowsGame1.Forms
 
         private void SetValues()
         {
-            game.states.a.boll.pos.X = int.Parse(textBox1.Text);
-            game.states.a.boll.pos.Y = (Game1.height/Astate.pixelPerMeter) - int.Parse(textBox2.Text);
-            game.states.a.boll.angle = (float)MathHelper.ToRadians(int.Parse(textBox3.Text));
-            game.states.a.boll.rotation = game.states.a.boll.angle;
-            game.states.a.boll.speed = int.Parse(textBox4.Text);
+            game.states.a.pos.X = int.Parse(textBox1.Text);
+            game.states.a.pos.Y = (Game1.height/Astate.pixelPerMeter) - int.Parse(textBox2.Text);
+            game.states.a.angle = (float)MathHelper.ToRadians(int.Parse(textBox3.Text));
+            game.states.a.rotation = game.states.a.angle;
+            game.states.a.speed = int.Parse(textBox4.Text);
         }
 
         // Set values button
@@ -72,12 +72,12 @@ namespace WindowsGame1.Forms
         // Start button
         private void button2_MouseClick(object sender, MouseEventArgs e)
         {
-            game.states.a.boll.Start();
+            game.states.a.Start();
         }
         // Reset button
         private void button3_MouseClick(object sender, MouseEventArgs e)
         {
-            game.states.a.boll.Reset();
+            game.states.a.Reset();
             SetValues();
         }
     }

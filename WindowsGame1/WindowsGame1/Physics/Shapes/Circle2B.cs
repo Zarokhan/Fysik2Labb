@@ -9,7 +9,7 @@ using WindowsGame1.Utilities;
 
 namespace WindowsGame1.Physics.Shapes
 {
-    class Box : DrawObject
+    class Circle2B : DrawObject
     {
         public float massa;
         public float Fg;
@@ -19,8 +19,8 @@ namespace WindowsGame1.Physics.Shapes
         // Normalkraften
         public Vector2 Fn = Vector2.Zero;
 
-        public Box(ResourceManager res)
-            : base(res.box)
+        public Circle2B(ResourceManager res)
+            : base(res.boll)
         {
             massa = 100;
             Fg = massa * 9.82f;

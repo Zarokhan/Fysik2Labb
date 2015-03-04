@@ -15,7 +15,7 @@ namespace WindowsGame1.States.AllStates
 
         private DrawObject ramp;
         private float angle;
-        private Box box;
+        private Circle2B box;
 
         private Vector2 start = Vector2.Zero, end = Vector2.Zero;
         private Vector2 direction = Vector2.Zero;
@@ -32,7 +32,7 @@ namespace WindowsGame1.States.AllStates
         {
             angle = (float)MathHelper.ToRadians(31);
             
-            box = new Box(game.res);
+            box = new Circle2B(game.res);
             box.Rotation = angle;
             // Calculate normalkraften
             box.Fn.X = (float)(box.Fg * Math.Sin(angle));

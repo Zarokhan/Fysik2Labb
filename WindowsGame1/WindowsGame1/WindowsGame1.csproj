@@ -100,13 +100,12 @@
       <DependentUpon>SelectAssignment.cs</DependentUpon>
     </Compile>
     <Compile Include="Physics\PhysicsObject.cs" />
-    <Compile Include="Physics\Shapes\Boll.cs" />
-    <Compile Include="Physics\Shapes\Box.cs" />
+    <Compile Include="States\AllStates\Astate.cs" />
+    <Compile Include="Physics\Shapes\Circle2B.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="States\AbstractState.cs" />
-    <Compile Include="States\AllStates\Astate.cs" />
     <Compile Include="States\AllStates\Bstate.cs" />
     <Compile Include="States\AllStates\Cstate.cs" />
     <Compile Include="States\StateManager.cs" />

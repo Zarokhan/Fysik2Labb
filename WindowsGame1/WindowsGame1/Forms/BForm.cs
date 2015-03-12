@@ -20,6 +20,15 @@ namespace WindowsGame1.Forms
             InitializeComponent();
         }
 
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
         // friktionskoefficienten
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -40,6 +49,7 @@ namespace WindowsGame1.Forms
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             game.states.b.SetFriktionskoefficienten(float.Parse(textBox1.Text, CultureInfo.InvariantCulture.NumberFormat));
+            game.states.b.speed = float.Parse(textBox2.Text, CultureInfo.InvariantCulture.NumberFormat);
         }
 
         // Active
@@ -53,5 +63,6 @@ namespace WindowsGame1.Forms
         {
             game.states.b.Reset();
         }
+
     }
 }

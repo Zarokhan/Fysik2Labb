@@ -4,3 +4,4 @@ Content\Images\ramp.xnb
 Content\Images\car.xnb
 Content\Images\ohm.xnb
 Content\font.xnb
+Content\Images\bana.xnb

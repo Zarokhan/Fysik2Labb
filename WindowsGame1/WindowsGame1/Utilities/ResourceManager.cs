@@ -18,6 +18,7 @@ namespace WindowsGame1.Utilities
         public Texture2D car { get; set; }
         public Texture2D ohm { get; set; }
         public Texture2D dot { get; set; }
+        public Texture2D bana { get; set; }
 
         public SpriteFont font { get; set; }
 
@@ -33,6 +34,7 @@ namespace WindowsGame1.Utilities
             ramp = content.Load<Texture2D>(@"Images/ramp");
             car = content.Load<Texture2D>(@"Images/car");
             ohm = content.Load<Texture2D>(@"Images/ohm");
+            bana = content.Load<Texture2D>(@"Images/bana");
             font = content.Load<SpriteFont>(@"font");
 
             dot = new Texture2D(game.GraphicsDevice, 1, 1);

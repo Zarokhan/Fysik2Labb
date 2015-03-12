@@ -14,8 +14,9 @@ namespace WindowsGame1.States.AllStates
 
         public const int pixelPerMeter = 50;
 
+        private bool negative = false;
         private float angle;
-        private Circle2B boll;
+        public Circle2B boll { get; set; }
         private int currentStage;
 
         private Vector2 p1, p2, p3, p4, p5;
@@ -24,7 +25,6 @@ namespace WindowsGame1.States.AllStates
 
         // kinetisk
         private float friktionskoefficienten { get; set; }
-        public float speed { get; set; }
         private float friktionskraften;
         private float ma;
 
@@ -33,82 +33,152 @@ namespace WindowsGame1.States.AllStates
         public Bstate(Game1 game)
             : base(game)
         {
-            currentStage = 0;
-            angle = (float)MathHelper.ToRadians(31);
             
             boll = new Circle2B(game.res);
             boll.Rotation = angle;
-            // Calculate normalkraften
-            boll.Fn.X = (float)(boll.Fg * Math.Sin(angle));
-            boll.Fn.Y = (float)(boll.Fg * Math.Cos(angle));
 
             p1 = new Vector2(1, 7);
-            p2 = new Vector2(4, 7);
-            p3 = new Vector2(15, 14);
-            p4 = new Vector2(18, 14);
-            p5 = new Vector2(25, 7);
+            p2 = new Vector2(2, 7);
+            p3 = new Vector2(11, 14);
+            p4 = new Vector2(16, 14);
+            p5 = new Vector2(23 * 1.25f, 0);
 
+            Init();
+        }
+
+        private void Init()
+        {
+            currentStage = 0;
+            lenght = 0;
             direction = new Vector2(p2.X - p1.X, p2.Y - p1.Y);
             distance = Vector2.Distance(p1, p2);
             direction.Normalize();
-            speed = 2;
-
+            angle = (float)Math.Atan2(p2.Y - p1.Y, p2.X - p1.X);
             boll.pos = new Vector2(p1.X, p1.Y);
-
-            //SetFriktionskoefficienten(0.45f);
         }
 
         public void Reset()
         {
             active = false;
+            negative = false;
             this.boll.acceleration = 0;
             this.boll.hastighet = 0;
-            this.boll.pos = new Vector2(p1.X, p1.Y);
-            //SetFriktionskoefficienten(friktionskoefficienten);
+            Init();
+            SetFriktionskoefficienten(friktionskoefficienten);
         }
 
         public void SetFriktionskoefficienten(float tal)
         {
+            // Calculate normalkraften
+            boll.Fn.X = (float)(boll.Fg * Math.Sin(angle));
+            boll.Fn.Y = (float)(boll.Fg * Math.Cos(angle));
             this.friktionskoefficienten = tal;
             friktionskraften = friktionskoefficienten * boll.Fn.Y;
             ma = boll.Fn.X - friktionskraften;
             boll.acceleration = (ma * 9.82f) / boll.Fg;
-
-            if (boll.acceleration < 0)
-                boll.acceleration = 0;
         }
 
         public override void Update(float delta)
         {
             if (active)
             {
+                boll.hastighet += boll.acceleration * delta;
 
-                boll.pos.X += direction.X * speed * delta;
-                boll.pos.Y += direction.Y * speed * delta;
-                lenght += speed * delta;
-                if (lenght >= distance)
+                boll.pos.X += direction.X * boll.hastighet * delta;
+                boll.pos.Y += direction.Y * boll.hastighet * delta;
+
+                if (currentStage == 0 || currentStage == 2)
                 {
-                    currentStage += 1;
+                    if (!negative)
+                    {
+                        if (boll.hastighet < 0)
+                        {
+                            boll.acceleration = 0;
+                            boll.hastighet = 0;
+                        }
+                    }
+                }
+
+                lenght += boll.hastighet * delta;
+                if (lenght > distance || lenght < 0)
+                {
+                    if (lenght > distance)
+                    {
+                        currentStage++;
+                    }
+                    if (lenght > distance && negative)
+                    {
+                        negative = false;
+                    }
+                    if (lenght < 0)
+                    {
+                        currentStage--;
+                        negative = true;
+                    }
                     switch (currentStage)
                     {
+                        case 0:
+                            direction = new Vector2(p2.X - p1.X, p2.Y - p1.Y);
+                            distance = Vector2.Distance(p1, p2);
+                            direction.Normalize();
+                            if(!negative)
+                                angle = (float)Math.Atan2(p2.Y - p1.Y, p2.X - p1.X);
+                            else
+                                angle = (float)Math.Atan2(p1.Y - p2.Y, p1.X - p2.X);
+                            SetFriktionskoefficienten(friktionskoefficienten);
+                            lenght = 0;
+                            break;
                         case 1:
-                                direction = new Vector2(p3.X - p2.X, p3.Y - p2.Y);
-                                distance = Vector2.Distance(p2, p3);
-                                direction.Normalize();
-                                lenght = 0;
+                            if(!negative)
+                                angle = (float)Math.Atan2(p3.Y - p2.Y, p3.X - p2.X);
+                            else
+                                angle = (float)Math.Atan2(p2.Y - p5.Y, p2.X - p5.X);
+                            SetFriktionskoefficienten(friktionskoefficienten);
+                            direction = new Vector2(p3.X - p2.X, p3.Y - p2.Y);
+                            distance = Vector2.Distance(p2, p3);
+                            direction.Normalize();
+                            lenght = 0;
                             break;
                         case 2:
-                                direction = new Vector2(p4.X - p3.X, p4.Y - p3.Y);
-                                distance = Vector2.Distance(p3, p4);
-                                direction.Normalize();
-                                lenght = 0;
+                            if(!negative)
+                                angle = (float)Math.Atan2(p4.Y - p3.Y, p4.X - p3.X);
+                            else
+                                angle = (float)Math.Atan2(p3.Y - p4.Y, p3.X - p4.X);
+                            SetFriktionskoefficienten(friktionskoefficienten);
+                            direction = new Vector2(p4.X - p3.X, p4.Y - p3.Y);
+                            distance = Vector2.Distance(p3, p4);
+                            direction.Normalize();
+                            lenght = 0;
                             break;
                         case 3:
-                                direction = new Vector2(p5.X - p4.X, p5.Y - p4.Y);
-                                distance = Vector2.Distance(p4, p5);
-                                direction.Normalize();
-                                lenght = 0;
+                            if(!negative)
+                                angle = (float)Math.Atan2(p5.Y - p4.Y, p5.X - p4.X);
+                            else
+                                angle = (float)Math.Atan2(p4.Y - p5.Y, p4.X - p5.X);
+                            SetFriktionskoefficienten(friktionskoefficienten);
+                            direction = new Vector2(p5.X - p4.X, p5.Y - p4.Y);
+                            distance = Vector2.Distance(p4, p5);
+                            direction.Normalize();
+                            lenght = 0;
                             break;
+                    }
+                    if (negative)
+                    {
+                        switch (currentStage)
+                        {
+                            case 0:
+                                lenght = distance = Vector2.Distance(p1, p2);
+                                break;
+                            case 1:
+                                lenght = distance = Vector2.Distance(p2, p3);
+                                break;
+                            case 2:
+                                lenght = distance = Vector2.Distance(p3, p4);
+                                break;
+                            case 3:
+                                lenght = distance = Vector2.Distance(p4, p5);
+                                break;
+                        }
                     }
                 }
             }
@@ -116,6 +186,7 @@ namespace WindowsGame1.States.AllStates
 
         public override void Draw(SpriteBatch batch)
         {
+            batch.Draw(game.res.bana, new Vector2(0, 0), Color.White);
             boll.Draw(batch);
 
             // Renders text

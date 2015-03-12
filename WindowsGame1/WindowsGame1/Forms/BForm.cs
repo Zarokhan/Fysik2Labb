@@ -49,7 +49,7 @@ namespace WindowsGame1.Forms
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             game.states.b.SetFriktionskoefficienten(float.Parse(textBox1.Text, CultureInfo.InvariantCulture.NumberFormat));
-            game.states.b.speed = float.Parse(textBox2.Text, CultureInfo.InvariantCulture.NumberFormat);
+            game.states.b.boll.hastighet = float.Parse(textBox2.Text, CultureInfo.InvariantCulture.NumberFormat);
         }
 
         // Active

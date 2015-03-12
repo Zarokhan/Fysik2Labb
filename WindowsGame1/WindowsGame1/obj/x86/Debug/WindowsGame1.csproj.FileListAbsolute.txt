@@ -100,3 +100,4 @@ C:\Users\Robin\Desktop\fysik2\master\WindowsGame1\WindowsGame1\obj\x86\Debug\Win
 C:\Users\Robin\Desktop\fysik2\master\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csproj.GenerateResource.Cache
 C:\Users\Robin\Desktop\fysik2\master\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Robin\Desktop\fysik2\master\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\bana.xnb

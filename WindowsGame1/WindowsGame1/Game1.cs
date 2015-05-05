@@ -29,8 +29,7 @@ namespace WindowsGame1
 
         public SelectAssignment form { get; set; }
         public AForm aForm { get; set; }
-        public BForm bForm { get; set; }
-        public CForm cForm { get; set; }
+        public A2Form a2Form { get; set; }
 
         public Game1()
         {
@@ -46,8 +45,7 @@ namespace WindowsGame1
         {
             form.Close();
             aForm.Close();
-            bForm.Close();
-            cForm.Close();
+            a2Form.Close();
         }
 
         protected override void Initialize()
@@ -63,8 +61,7 @@ namespace WindowsGame1
             form = new SelectAssignment(this);
             form.Show();
             aForm = new AForm(this);
-            bForm = new BForm(this);
-            cForm = new CForm(this);
+            a2Form = new A2Form(this);
 
             states = new StateManager(this);
         }

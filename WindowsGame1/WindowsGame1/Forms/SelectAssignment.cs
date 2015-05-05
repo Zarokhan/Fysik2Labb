@@ -33,14 +33,9 @@ namespace WindowsGame1.Fönster
         // Button B
         private void button2_MouseClick(object sender, MouseEventArgs e)
         {
-            game.states.ChangeState(States.StateManager.State.B);
+            game.states.ChangeState(States.StateManager.State.A2);
             this.Close();
         }
 
-        private void button3_MouseClick(object sender, MouseEventArgs e)
-        {
-            game.states.ChangeState(States.StateManager.State.C);
-            this.Close();
-        }
     }
 }

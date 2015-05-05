@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WindowsGame1.States.AllStates;
 
 namespace WindowsGame1.Utilities
 {
@@ -65,6 +66,16 @@ namespace WindowsGame1.Utilities
         public Rectangle GetOffsetRect(int xOffsert, int yOffset)
         {
             return new Rectangle((int)(pos.X - origin.X) + xOffsert, (int)(pos.Y - origin.Y) + yOffset, width, height);
+        }
+
+        public float GetOriginX()
+        {
+            return origin.X / A2State.pixelPerMeter;
+        }
+
+        public float GetOriginY()
+        {
+            return origin.Y / A2State.pixelPerMeter;
         }
     }
 }

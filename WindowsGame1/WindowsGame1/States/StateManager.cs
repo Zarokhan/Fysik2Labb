@@ -12,23 +12,21 @@ namespace WindowsGame1.States
     {
         public enum State
         {
-            None, A, B, C
+            None, A, A2
         }
 
         private Game1 game;
         private State currentState;
 
         public Astate a { get; set; }
-        public Bstate b { get; set; }
-        public Cstate c { get; set; }
+        public A2State a2 { get; set; }
 
         public StateManager(Game1 game)
         {
             this.game = game;
             currentState = State.None;
             a = new Astate(game);
-            b = new Bstate(game);
-            c = new Cstate(game);
+            a2 = new A2State(game);
         }
 
         public void ChangeState(State s)
@@ -43,13 +41,9 @@ namespace WindowsGame1.States
                     game.aForm = new Forms.AForm(game);
                     game.aForm.Show();
                     break;
-                case State.B:
-                    game.bForm = new Forms.BForm(game);
-                    game.bForm.Show();
-                    break;
-                case State.C:
-                    game.cForm = new Forms.CForm(game);
-                    game.cForm.Show();
+                case State.A2:
+                    game.a2Form = new Forms.A2Form(game);
+                    game.a2Form.Show();
                     break;
             }
         }
@@ -63,11 +57,8 @@ namespace WindowsGame1.States
                 case State.A:
                     a.Update(delta);
                     break;
-                case State.B:
-                    b.Update(delta);
-                    break;
-                case State.C:
-                    c.Update(delta);
+                case State.A2:
+                    a2.Update(delta);
                     break;
             }
         }
@@ -86,11 +77,8 @@ namespace WindowsGame1.States
                 case State.A:
                     a.Draw(batch);
                     break;
-                case State.B:
-                    b.Draw(batch);
-                    break;
-                case State.C:
-                    c.Draw(batch);
+                case State.A2:
+                    a2.Draw(batch);
                     break;
             }
         }

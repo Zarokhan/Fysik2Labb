@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\box.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\box.xnb</Output>
       <Time>2015-03-04T19:02:01.7215966+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\boll.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\boll.xnb</Output>
       <Time>2015-03-04T19:02:01.7205955+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ramp.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ramp.xnb</Output>
       <Time>2015-03-04T19:02:01.7225973+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\car.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\car.xnb</Output>
       <Time>2015-03-04T19:02:01.7215966+01:00</Time>
     </Item>
     <Item>
@@ -43,17 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ohm.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ohm.xnb</Output>
       <Time>2015-03-04T19:02:01.7225973+01:00</Time>
-    </Item>
-    <Item>
-      <Source>font.spritefont</Source>
-      <Name>font</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\font.xnb</Output>
-      <Time>2015-03-04T19:02:01.724599+01:00</Time>
     </Item>
     <Item>
       <Source>Images\bana.png</Source>
@@ -61,8 +52,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\bana.xnb</Output>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\bana.xnb</Output>
       <Time>2015-03-12T21:41:11.5293437+01:00</Time>
+    </Item>
+    <Item>
+      <Source>font.spritefont</Source>
+      <Name>font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2015-03-04T19:02:01.724599+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -71,10 +71,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Robin\Desktop\Fysik2Labb\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Robin\Desktop\master\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
